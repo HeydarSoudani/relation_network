@@ -46,3 +46,6 @@ for datatype in ['train', 'val', 'test']:
                 os.system('mkdir ' + cur_dir)
                 last_label = label
             os.system('cp images/' + image_name + ' ' + cur_dir)
+
+            if i == 2000:
+                break
