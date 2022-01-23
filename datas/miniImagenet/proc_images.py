@@ -29,6 +29,9 @@ for i, image_file in enumerate(all_images):
     if i % 500 == 0:
         print(i)
 
+    if i == 2000:
+        break
+
 # Put in correct directory
 for datatype in ['train', 'val', 'test']:
     os.system('mkdir ' + datatype)
