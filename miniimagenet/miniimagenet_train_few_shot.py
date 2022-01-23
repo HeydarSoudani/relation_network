@@ -173,6 +173,9 @@ def main():
         # sample datas
         samples,sample_labels = sample_dataloader.__iter__().next() #25*3*84*84
         batches,batch_labels = batch_dataloader.__iter__().next()
+        
+        print('samples: {}'.format(samples.shape))
+        print('batches: {}'.format(batches.shape))
 
         # calculate features
         sample_features = feature_encoder(Variable(samples).cuda(GPU)) # 25*64*19*19
